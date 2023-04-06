@@ -46,11 +46,22 @@ h1{
 }
 
 header{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background:linear-gradient(black, rgb(53, 52, 52),rgb(252, 35, 154));
+}
+
+header .limitador{
     display: flex;
     justify-content: space-between;
     align-items: center;
-     height: 10vh; 
-    background:linear-gradient(black, rgb(53, 52, 52),rgb(252, 35, 154));
+    padding: 2rem 0;
+}
+
+.limitador{ 
+    margin: auto;
+    width: 95vw;   
 }
 nav h2 a{
     display: inline-block;
@@ -147,12 +158,23 @@ nav a:hover, nav a:focus{
     text-align: center;
 }
 
-.informativo h2{
+article h2, aside h2{
+    font-family: Raleway,sans-serif,Arial, Helvetica;
     font-size: 3rem;
+    padding: 2rem;
     color: blueviolet;
 }
-.informativo p{
-    font-size: 1.2rem;
+article p, aside p{
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+aside{
+    text-align: center;
+}
+
+aside h2{
+    color:crimson;
 }
 
 
@@ -329,4 +351,24 @@ form h2{
     .cancelar {
       width: 100%;
     }
+  }
+iframe{
+    width: 100%;
+}
+
+  .video{
+    background-image: url(../imagens/fundo-iframe-video.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+text-align: center;
+  }
+ 
+.video h2{
+      color: rgb(51, 255, 0);
+    
+}   
+  .video iframe{
+        max-width: 700px;
+        margin-bottom: 2rem;
   }
