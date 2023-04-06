@@ -58,7 +58,7 @@ nav h2 a{
     font-size: 1.2rem;
 }
 
-nav a:hover{
+nav a:hover, nav a:focus{
     background-color: #ffffff54;
 }
 
@@ -123,8 +123,8 @@ nav a:hover{
     height: 90vh;
 }
 
-.glitch{
-    animation: alternate-reverse  glitch 15s infinite;
+.glitch:hover{
+    animation: alternate-reverse  glitch 5s infinite;
 }
 .rotate{
     animation: alternate linear rotate 5s infinite;
@@ -198,7 +198,7 @@ footer  nav {
      min-width: 60%;
 }
 
-#livros img:hover{
+#livros img:hover, #livros img:focus{
     transform: translateY(-10px) scale(1.5);
     box-shadow: black 2px 2px 2px;
 }
@@ -228,7 +228,8 @@ footer  nav {
   }
 
   form *{
-    font-family: 'Poppins',sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-family:'Poppins',sans-serif, Arial, Helvetica, sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;
@@ -239,17 +240,16 @@ form{
     padding: 3rem;
     margin: 0 2rem;
     border:3px solid #0019fd;
-    height: 540px;
-    max-width: 500px;
+    max-width: 100%;
     top: 50%;
     left: 50%;
     border-radius: 10px;
     box-shadow: 0 0 40px rgba(8, 7, 16, 0.936);
-    background-color: rgba(127, 247, 231, 0.527);
+    background-color: rgba(204, 0, 255, 0.527);
     
 }
 
-.psw a:hover{
+.psw a:hover, .psw a:focus{
     color: rgb(238, 255, 0);
 }
 
@@ -281,7 +281,7 @@ input[type=text], input[type=password], input[ type=email] {
     cursor: pointer;
     width: 100%;
   }
-  button:hover {
+  button:hover, button:focus {
     opacity: 0.8;
     background-color: deeppink;
   }
@@ -297,15 +297,16 @@ input[type=text], input[type=password], input[ type=email] {
 }
 
 span.psw {
+    margin-left: 2rem;
     padding-top: 10px;
   }
 
 .baixo{
     padding-bottom: 2rem;
-    max-width: 100%;
+    /* max-width: 100%; */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1rem;
     background-color: rgb(133, 61, 105);
 }
