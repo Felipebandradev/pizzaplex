@@ -22,22 +22,44 @@
                     <li><a href="lendas-urbanas.html">CONTOS</a></li>
                     <li><a href="mascotes.html">MASCOTES</a></li>
                     <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="https://store.steampowered.com/app/747660/Five_Nights_at_Freddys_Security_Breach/" target="_blank">Obtenha</a></li>
                 </ul>     
              </nav>
         </div>
    </header>
  
+ 
 
    <!-- area de recuperção de senha  -->
    <main>     
-        <div id="area-login" class="centro-login">
+        <div id="area-login" class="centro-login cadastro limitador">
             <form action="" method="post">
-                <h2>Recuperar a Senha</h2>
-                <label for="email"> E-mail para  Recuperar a Senha:</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu email">
-                <button type="submit">Enviar</button>
+                <h2>Crie uma Conta</h2>
+
+                <label for="nome">Nome de Usuario:</label>
+                <input type="text" placeholder="Digite seu usuario" name="nome" required>
+
+                <label for="nascimento">Data de nascimento: </label>
+                <input type="date" name="nascimento" id="nascimento">
+
+
+                <label for="email"> E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+
+                 <label for="confirmeemail">confirme seu e-mail:</label>
+                <input type="email" name="confirmeemail" id="confirmeemail" placeholder="confirme seu e-mail" required>
+
+                <label for="psw">Senha:</label>
+                <input type="password" placeholder="Digite sua Senha" name="psw" required>
+
+                <label for="confirmepsw">confirme a Senha:</label>
+                <input type="password" placeholder="Digite sua Senha" name="confirmepsw" required>
+
+                <button><type="submit">Cadastre-se</button>
+
                 <div class="conectar baixo">
                     <button type="button" class="cancelar">Cancelar</button>
+                    <span class="psw"><b><a href="login.html">Já tem login?</a></b></span>
                 </div>
             </form>
         </div>
