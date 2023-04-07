@@ -406,6 +406,8 @@ text-align: center;
 }
 
 .texto-mascote{
+    margin: auto;
+    width: 95vw;
     max-width: 500px;
     text-shadow: black 5px 5px 10px;
     text-align: center;
