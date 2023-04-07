@@ -31,10 +31,14 @@ img{ max-width: 100%;}
 
 h1 a{
     color: rgb(229, 255, 0);
-    background-color: #aa00aa;
+    background-color: #0004ff;
     padding: 0.6rem 1.1rem;
-    border-radius: 15px;
+    border-radius: 5px;
     text-transform: uppercase;
+}
+
+h1 a:hover, h1 a:focus{
+    opacity: 0.8;
 }
 
 h1{
@@ -106,8 +110,20 @@ nav a:hover, nav a:focus{
     nav{
         width: 70%;
     }
+.compre{ 
+    box-shadow: rgba(0, 0, 155, 0.699) 5px 5px ;
+    border-radius: 5px 10px 5px 10px;
 }
 
+.compre:hover, .compre:focus{
+    opacity: 0.8;
+    background-color: rgb(113, 113, 250);
+    
+}
+}
+.compre{
+    background-color: #3643f4b0;
+}
 .menu a{
     font-weight: bold;
     display: flex;
@@ -150,6 +166,8 @@ nav a:hover, nav a:focus{
         transform: rotateY(180deg);
     }
 }
+
+
 
 .informativo{
     padding: 1.2rem;
@@ -344,7 +362,6 @@ span.psw {
 
 .baixo{
     padding-bottom: 2rem;
-    /* max-width: 100%; */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
