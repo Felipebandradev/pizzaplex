@@ -170,6 +170,7 @@ article p, aside p{
 }
 
 aside{
+    padding-bottom: 2rem;
     text-align: center;
 }
 
@@ -179,6 +180,10 @@ aside h2{
 
 
 footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 1.2rem;
     background-color: rgb(226, 43, 202);
     text-align: center;
@@ -186,7 +191,8 @@ footer{
 }
 
 footer img{
-    max-width: 5vw;
+    width: 100%;
+    max-width: 50px;
 }
 
 footer  nav {

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Pizzaplex</title>
+    <link rel="shortcut icon" href="../imagens/FNAFSB.webp" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1> 
+           <a href="index.html">Pizzaplex</a>
+       </h1>
+          
+       <nav> 
+        <h2><a href="">Menu &equiv;</a></h2>
+        <ul class="menu">      
+          <li> <a href="index.html">HOME</a></li>
+           <li><a href="lendas-urbanas.html">CONTOS</a></li>
+           <li><a href="mascotes.html">MASCOTES</a></li>
+           <li><a href="login.html">LOGIN</a></li>
+        </ul>     
+       </nav>
+   </header>
+
+    <!-- Login -->
+       <main   id="area-login"  class="centro-login">
+           <form action="" method="post"> 
+            <div class="avatarcont">
+                <img src="../imagens/exemplo-foto-perfil.jpg" alt="avatar" class="avatar">
+            </div>
+            <div class="conectar">
+                <label for="nome">Nome de Usuario:</label>
+                <input type="text" placeholder="Digite seu usuario" name="nome" required>
+                <label for="psw">Senha:</label>
+                <input type="password" placeholder="Digite sua Senha" name="psw" required>
+                <button type="submit">Conecte-se</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="lembre-me"> Lembre-me
+                </label>
+            </div>
+            <div class="conectar baixo">
+                <button type="button" class="cancelar">Cancelar</button>
+                <span class="psw"><b><a href="cadastro.html">Não tem Cadastro?</a></b></span>
+            </div>
+           </form>
+       </main>
+
+   
+    <!-- Rodapé -->
+    <footer>
+        <nav> 
+            <a href="index.html">HOME</a><a href="lendas-urbanas.html">CONTOS</a><a href="mascotes.html">MASCOTES</a>
+            <a href="login.html">Login</a>     
+        </nav>
+        <a href="https://github.com/Felipebandradev" target="_blank"><img src="../imagens/github.svg" alt="github icone"></a>
+        <p>esse site ficticio foi feito para fins estudantis
+           <b>Scott Cawthon &copy;2023,
+           Steel Wool &copy;2023,
+           Felipe Barbosa &copy;2023</b> 
+        </p>
+    </footer>
+<script src="../js/menu.js"></script>
+</body>
+</html>
